@@ -22,6 +22,10 @@ p {
     text-align: center;
     font-size: 70px;
 }
+.alt_heading {
+    font-size: 60px;
+    text-align: center;
+}
 #headline {
     text-align: center;
 }
@@ -96,4 +100,40 @@ div.desc:hover {
     font-size: 20px;
     text-align: center;
     padding-bottom: 10px;
+}
+
+div.project_element {
+    border: 1px solid #ccc;
+    float: left;
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+    margin: 20px;
+    position: relative;
+}
+/*Modifies the border and brightness of an image upon hover */
+div.project_element:hover {
+    border: 1px solid #777;
+    img {
+        filter: brightness(33%);
+    }
+    .img_desc {
+        visibility: visible;
+    }
+}
+/*Modifies the attributes of images in the gallery */
+div.project_element img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.img_desc {
+    visibility: hidden;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
