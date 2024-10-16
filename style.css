@@ -129,6 +129,7 @@ div.project_element:hover {
     }
     .img_desc {
         visibility: visible;
+        font-size: 30px;
     }
 }
 /*Modifies the attributes of images in the gallery */
