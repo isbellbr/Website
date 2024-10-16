@@ -35,10 +35,12 @@ h2 {
 #hobby-list {
     margin-left: 75px;
 }
-/* Add a black background color to the top navigation */
+/* Add a white background color to the top navigation */
 .topnav {
 background-color: #fffefe;
 overflow: hidden;
+position: sticky;
+top: 0;
 }
 
 /* Style the links inside the navigation bar */
@@ -55,13 +57,16 @@ font-size: 17px;
 .topnav a:hover {
 background-color: #ddd;
 color: black;
+cursor: pointer;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-background-color: #027f51;
+background-color: #000000;
 color: white;
 }
+
+
 
 
 
@@ -102,9 +107,14 @@ div.desc:hover {
     padding-bottom: 10px;
 }
 
+#projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 div.project_element {
     border: 1px solid #ccc;
-    float: left;
     width: 450px;
     height: 300px;
     overflow: hidden;
@@ -136,4 +146,30 @@ div.project_element img {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    /* Add a white background color to the top navigation */
+    .topnav {
+    background-color: black;
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+    color: white;
+    }
+
+    .topnav a.active {
+        background-color: white;
+        color: black;
+        }
+    .topnav a:hover {
+        background-color: #777777;
+        }
+    div.gallery {
+        background-color: black;
+    }
+
 }
