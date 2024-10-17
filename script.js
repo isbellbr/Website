@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", function() {
         // Save the user's preference in local storage
         if (document.body.classList.contains("dark-mode")) {
             localStorage.setItem("darkMode", "enabled");
-            dark_mode_button.innerText = "Dark Mode";
+            dark_mode_button.innerText = "Light Mode";
         } else {
             localStorage.setItem("darkMode", "disabled");
-            dark_mode_button.innerText = "Light Mode";
+            dark_mode_button.innerText = "Dark Mode";
         }
     });
 });
