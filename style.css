@@ -260,6 +260,6 @@ div.project_element img {
     display: flex;
 }
 .post_preview:hover {
-    filter: drop-shadow(3px 3px 3px #e4e4e4);
+    filter: drop-shadow(3px 3px 3px #b9b9b9);
     transform: scale(1.008);
 }
