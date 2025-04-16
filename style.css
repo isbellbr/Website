@@ -155,6 +155,7 @@ div.project_element img {
     height: 300px;
     object-fit: cover;
     overflow: hidden;
+    object-position: 72% center;
 }
 .img_desc {
     visibility: hidden;
